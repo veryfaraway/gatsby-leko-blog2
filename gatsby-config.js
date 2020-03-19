@@ -5,7 +5,7 @@ require(`dotenv`).config({
 module.exports = {
   siteMetadata: {
     siteTitle: `주경야근`,
-    siteTitleAlt: `주경야근(晝耕夜勤) Personal Blog - Gatsby Theme`,
+    siteTitleAlt: `주경야근(晝耕夜勤) | 밤낮없이 일하는 개발자를 위한 블로그`,
     siteHeadline: `Personal Blog with Gatsby by @handsomeJung`,
     siteUrl: `https://apple.viewtreefull.com`,
     siteDescription: `Java, Apple, Mac, Big Data, Hadoop, Saprk, Machine Learning, Data Engineer, Cloud, AWS`,
@@ -19,10 +19,15 @@ module.exports = {
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       options: {
+        formatString: `YYYY.MM.DD`,
         navigation: [
           {
             title: `Blog`,
             slug: `/blog`,
+          },
+          {
+            title: `Tags`,
+            slug: `/tags`,
           },
           // {
           //   title: `About`,
@@ -52,7 +57,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
+        short_name: `주경야근`,
         description: `Java, Apple, Mac, Big Data, Hadoop, Saprk, Machine Learning, Data Engineer, Cloud, AWS`,
         start_url: `/`,
         background_color: `#fff`,
