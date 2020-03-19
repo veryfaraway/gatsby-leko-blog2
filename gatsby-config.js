@@ -4,7 +4,16 @@ require(`dotenv`).config({
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `주경야근`,
+    siteTitleAlt: `주경야근(晝耕夜勤) Personal Blog - Gatsby Theme`,
+    siteHeadline: `Personal Blog with Gatsby by @handsomeJung`,
+    siteUrl: `https://apple.viewtreefull.com`,
+    siteDescription: `Java, Apple, Mac, Big Data, Hadoop, Saprk, Machine Learning, Data Engineer, Cloud, AWS`,
+    siteLanguage: `ko`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@handsomeJung`,
   },
   plugins: [
     {
@@ -15,20 +24,20 @@ module.exports = {
             title: `Blog`,
             slug: `/blog`,
           },
-          {
-            title: `About`,
-            slug: `/about`,
-          },
+          // {
+          //   title: `About`,
+          //   slug: `/about`,
+          // },
         ],
         externalLinks: [
           {
             name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            url: `https://twitter.com/handsomeJung`,
           },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
-          },
+          // {
+          //   name: `Instagram`,
+          //   url: `https://www.instagram.com/lekoarts.de/`,
+          // },
         ],
       },
     },
@@ -44,7 +53,7 @@ module.exports = {
       options: {
         name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
         short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        description: `Java, Apple, Mac, Big Data, Hadoop, Saprk, Machine Learning, Data Engineer, Cloud, AWS`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
