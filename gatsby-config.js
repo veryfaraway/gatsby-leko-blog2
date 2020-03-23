@@ -84,7 +84,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-adsense`,
       options: {
-        publisherId: `pub-7384479372850471`
+        publisherId: process.env.GOOGLE_ADS_ID
       },
     },
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
