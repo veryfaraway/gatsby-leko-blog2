@@ -2,7 +2,6 @@ backend:
   name: git-gateway
   repo: veryfaraway/gatsby-leko-blog2
   branch: master
-  site_domain: apple.viewtreefull.com
 
 media_folder: static/assets
 public_folder: /assets
