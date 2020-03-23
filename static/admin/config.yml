@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: veryfaraway/gatsby-leko-blog2
   branch: master
   site_domain: apple.viewtreefull.com
