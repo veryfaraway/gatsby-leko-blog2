@@ -14,6 +14,7 @@ module.exports = {
     siteImage: `/banner.jpg`,
     // Twitter Handle
     author: `@handsomeJung`,
+    banner: `true`,
   },
   plugins: [
     {
