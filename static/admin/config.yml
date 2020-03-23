@@ -9,9 +9,9 @@ public_folder: /assets
 collections:
   - name: "post"
     label: "Post"
-    folder: "content/posts"
+    folder: "content/posts/{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "index"
     editor:
      preview: false
     fields:
