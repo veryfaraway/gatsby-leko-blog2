@@ -10,13 +10,15 @@ const UtterancesTheme = {
   pd: `photon-dark`,
 }
  
-export default ({ theme }) => {
+export default ({ isDark }) => {
+  const themeMode = isDark ? UtterancesTheme.gd : UtterancesTheme.gl
+
   return (
     <Utterances
       repo="veryfaraway/gatsby-leko-blog2"
       issueTerm="pathname"
       label="comments"
-      theme={UtterancesTheme.gl}
+      theme={themeMode}
       crossorigin="anonymous"
       async={false}
       style={`
@@ -25,5 +27,6 @@ export default ({ theme }) => {
       }
     `}
     />
+    
   )
 }
