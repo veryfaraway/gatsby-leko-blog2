@@ -81,6 +81,12 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `pub-7384479372850471`
+      },
+    },
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
   ],
 }
