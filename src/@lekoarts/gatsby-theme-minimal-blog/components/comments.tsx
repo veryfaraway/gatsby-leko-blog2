@@ -2,16 +2,16 @@ import React from 'react'
 import Utterances from "utterances-react"
 
 const UtterancesTheme = {
-  gl: `github-light`,
-  gd: `github-dark`,
-  gdo: `github-dark-orange`,
-  id: `icy-dark`,
-  db: `dark-blue`,
-  pd: `photon-dark`,
+  light: `github-light`,
+  dark: `github-dark`,
+  darkOrange: `github-dark-orange`,
+  iceDark: `icy-dark`,
+  darkBlue: `dark-blue`,
+  photonDark: `photon-dark`,
 }
  
 export default ({ isDark }) => {
-  const themeMode = isDark ? UtterancesTheme.gd : UtterancesTheme.gl
+  const themeMode = isDark ? UtterancesTheme.darkBlue : UtterancesTheme.light
 
   return (
     <Utterances
