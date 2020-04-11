@@ -7,8 +7,6 @@ import Layout from "./layout"
 import ItemTags from "./item-tags"
 import SEO from "./seo"
 import Comments from "./comments"
-import Alert from "../components/alert"
-import Callout from "../components/callout"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 type PostProps = {
@@ -39,10 +37,6 @@ type PostProps = {
 const px = [`32px`, `16px`, `8px`, `4px`]
 const shadow = px.map(v => `rgba(0, 0, 0, 0.15) 0px ${v} ${v} 0px`)
 
-const shortcodes = {
-  Alert,
-}
-
 const Post = ({ data: { post } }: PostProps) => {
   const [colorMode, setColorMode] = useColorMode()
   const isDark = colorMode === `dark`
@@ -67,7 +61,7 @@ const Post = ({ data: { post } }: PostProps) => {
         <span>{post.timeToRead} min read</span>
       </p>
       <section sx={{ my: 5, ".gatsby-resp-image-wrapper": { my: [4, 4, 5], boxShadow: shadow.join(`, `) } }}>
-        <MDXProvider components={shortcodes}>
+        <MDXProvider>
           <MDXRenderer>{post.body}</MDXRenderer>
         </MDXProvider>
       </section>
