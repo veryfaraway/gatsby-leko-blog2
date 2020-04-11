@@ -53,7 +53,12 @@ module.exports = {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
       },
     },
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: process.env.GOOGLE_ADS_ID
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -78,6 +83,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
@@ -95,6 +101,7 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 950,
+              sizeByPixelDensity: true,
               wrapperStyle: fluidResult => `flex:${_.round(fluidResult.aspectRatio, 2)};`,
             },
           },
@@ -123,12 +130,6 @@ module.exports = {
             }
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-adsense`,
-      options: {
-        publisherId: process.env.GOOGLE_ADS_ID
       },
     },
     // `gatsby-plugin-webpack-bundle-analyser-v2`,
