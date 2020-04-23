@@ -2,7 +2,7 @@ import { tint } from "@theme-ui/color"
 
 export default {
   "[data-name='live-editor']": {
-    fontSize: 2,
+    fontSize: 1,
     "textarea, pre": {
       padding: (t: any) => `${t.space[3]} !important`,
     },
@@ -12,7 +12,7 @@ export default {
     backgroundColor: tint(`primary`, 0.7),
   },
   ".prism-code": {
-    fontSize: 2,
+    fontSize: 1,
     padding: 3,
     webkitOverflowScrolling: `touch`,
     backgroundColor: `transparent`,
